@@ -1,0 +1,31 @@
+{
+  "name": "backend-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "jade": "^0.31.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.9",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "passport": "^0.6.0",
+    "passport-facebook-token": "^4.0.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-instagram-token": "^2.3.0",
+    "passport-jwt": "^4.0.0",
+    "passport-microsoft": "^1.0.0",
+    "passport-twitter-token": "^1.3.0",
+    "session-file-store": "^1.5.0"
+  }
+}
