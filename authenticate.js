@@ -5,10 +5,10 @@ const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const jwt = require("jsonwebtoken");
 const FacebookTokenStrategy = require("passport-facebook-token");
-const InstagramTokenStrategy = require("passport-instagram-token").Strategy;
-const TwitterTokenStrategy = require("passport-twitter").Strategy;
-const GoogleTokenStrategy = require("passport-google-oauth2").Strategy;
-const MicrosoftTokenStrategy = require("passport-microsoft").Strategy;
+// const InstagramTokenStrategy = require("passport-instagram-token").Strategy;
+// const TwitterTokenStrategy = require("passport-twitter").Strategy;
+// const GoogleTokenStrategy = require("passport-google-oauth2").Strategy;
+// const MicrosoftTokenStrategy = require("passport-microsoft").Strategy;
 const config = require("./config");
 
 exports.local = passport.use(new LocalStrategy(User.authenticate()));
@@ -81,122 +81,122 @@ exports.facebookPassport = passport.use(
   )
 );
 
-exports.instagramPassport = passport.use(
-  new InstagramTokenStrategy(
-    {
-      clientID: INSTAGRAM_CLIENT_ID,
-      clientSecret: INSTAGRAM_CLIENT_SECRET,
-    },
-    (accessToken, refreshToken, profile, done) => {
-      User.findOne({ instagramId: profile.id }, (err, user) => {
-        if (err) {
-          return done(err, false);
-        }
-        if (!err && user) {
-          return done(null, user);
-        } else {
-          user = new User({ username: profile.displayName });
-          user.INSTAGRAM_CLIENT_ID = profile.id;
-          user.firstname = profile.name.givenName;
-          user.lastname = profile.name.familyName;
-          user.save((err, user) => {
-            if (err) {
-              return done(err, false);
-            } else {
-              return done(null, user);
-            }
-          });
-        }
-      });
-    }
-  )
-);
+// exports.instagramPassport = passport.use(
+//   new InstagramTokenStrategy(
+//     {
+//       clientID: config.INSTAGRAM_CLIENT_ID,
+//       clientSecret: config.INSTAGRAM_CLIENT_SECRET,
+//     },
+//     (accessToken, refreshToken, profile, done) => {
+//       User.findOne({ instagramId: profile.id }, (err, user) => {
+//         if (err) {
+//           return done(err, false);
+//         }
+//         if (!err && user) {
+//           return done(null, user);
+//         } else {
+//           user = new User({ username: profile.displayName });
+//           user.INSTAGRAM_CLIENT_ID = profile.id;
+//           user.firstname = profile.name.givenName;
+//           user.lastname = profile.name.familyName;
+//           user.save((err, user) => {
+//             if (err) {
+//               return done(err, false);
+//             } else {
+//               return done(null, user);
+//             }
+//           });
+//         }
+//       });
+//     }
+//   )
+// );
 
-exports.twitterPassport = passport.use(
-  new TwitterTokenStrategy(
-    {
-      consumerKey: config.twitter.consumerKey,
-      consumerSecret: config.twitter.consumerSecret,
-      includeEmail: true,
-    },
-    (token, tokenSecret, profile, done) => {
-      User.findOne(token, tokenSecret, profile, (err, user) => {
-        if (err) {
-          return done(err, user);
-        }
-        if (!err && user) {
-          return done(err, false);
-        } else {
-          user = new User({ username: profile.displayName });
-          user.consumerKey = profile.id;
-          user.firstname = profile.name.givenName;
-          user.lastname = profile.name.familyName;
-          user.save((err, user) => {
-            if (err) {
-              return done(err, false);
-            } else {
-              return done(null, user);
-            }
-          });
-        }
-      });
-    }
-  )
-);
+// exports.twitterPassport = passport.use(
+//   new TwitterTokenStrategy(
+//     {
+//       consumerKey: config.twitter.consumerKey,
+//       consumerSecret: config.twitter.consumerSecret,
+//       includeEmail: true,
+//     },
+//     (token, tokenSecret, profile, done) => {
+//       User.findOne(token, tokenSecret, profile, (err, user) => {
+//         if (err) {
+//           return done(err, user);
+//         }
+//         if (!err && user) {
+//           return done(err, false);
+//         } else {
+//           user = new User({ username: profile.displayName });
+//           user.consumerKey = profile.id;
+//           user.firstname = profile.name.givenName;
+//           user.lastname = profile.name.familyName;
+//           user.save((err, user) => {
+//             if (err) {
+//               return done(err, false);
+//             } else {
+//               return done(null, user);
+//             }
+//           });
+//         }
+//       });
+//     }
+//   )
+// );
 
-exports.googlePassport = passport.use(
-  new GoogleTokenStrategy(
-    {
-      clientID: config.google.clientID,
-      clientSecret: config.google.clientSecret,
-    },
-    (accessToken, refreshToken, profile, done) => {
-      User.findOne(accessToken, refreshToken, profile, (err, user) => {
-        if (err) return done(err, user);
-        if (!err && user) {
-          return done(err, false);
-        } else {
-          user = new User({ username: profile.displayName });
-          user.clientID = profile.id;
-          user.firstname = profile.name.givenName;
-          user.lastname = profile.name.familyName;
-          user.save((err, user) => {
-            if (err) {
-              return done(err, false);
-            } else {
-              return done(null, user);
-            }
-          });
-        }
-      });
-    }
-  )
-);
-exports.microsoftPassport = passport.use(
-  new MicrosoftTokenStrategy(
-    {
-      clientID: config.microsoft.clientID,
-      clientSecret: config.microsoft.clientSecret,
-    },
-    (accessToken, refreshToken, profile, done) => {
-      User.findOne(accessToken, refreshToken, profile, (err, user) => {
-        if (err) return done(err, false);
-        if (!err && user) {
-          return done(err, false);
-        } else {
-          user = new User({ username: profile.displayName });
-          user.clientID = profile.id;
-          user.firstname = profile.name.givenName;
-          user.lastname = profile.name.familyName;
-          user.save((err, user) => {
-            if (err) {
-              return done(err, false);
-            } else {
-              return done(null, user);
-            }
-          });
-        }
-      });
-    }
-  )
-);
+// exports.googlePassport = passport.use(
+//   new GoogleTokenStrategy(
+//     {
+//       clientID: config.google.clientID,
+//       clientSecret: config.google.clientSecret,
+//     },
+//     (accessToken, refreshToken, profile, done) => {
+//       User.findOne(accessToken, refreshToken, profile, (err, user) => {
+//         if (err) return done(err, user);
+//         if (!err && user) {
+//           return done(err, false);
+//         } else {
+//           user = new User({ username: profile.displayName });
+//           user.clientID = profile.id;
+//           user.firstname = profile.name.givenName;
+//           user.lastname = profile.name.familyName;
+//           user.save((err, user) => {
+//             if (err) {
+//               return done(err, false);
+//             } else {
+//               return done(null, user);
+//             }
+//           });
+//         }
+//       });
+//     }
+//   )
+// );
+// exports.microsoftPassport = passport.use(
+//   new MicrosoftTokenStrategy(
+//     {
+//       clientID: config.microsoft.clientID,
+//       clientSecret: config.microsoft.clientSecret,
+//     },
+//     (accessToken, refreshToken, profile, done) => {
+//       User.findOne(accessToken, refreshToken, profile, (err, user) => {
+//         if (err) return done(err, false);
+//         if (!err && user) {
+//           return done(err, false);
+//         } else {
+//           user = new User({ username: profile.displayName });
+//           user.clientID = profile.id;
+//           user.firstname = profile.name.givenName;
+//           user.lastname = profile.name.familyName;
+//           user.save((err, user) => {
+//             if (err) {
+//               return done(err, false);
+//             } else {
+//               return done(null, user);
+//             }
+//           });
+//         }
+//       });
+//     }
+//  )
+//);

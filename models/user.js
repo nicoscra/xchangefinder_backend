@@ -24,10 +24,10 @@ const userSchema = new Schema({
     default: false,
   },
   facebookId: String,
-  instagramId: String,
-  twitterId: String,
-  googleId: String,
-  microsoftId: String,
+  // instagramId: String,
+  // twitterId: String,
+  // googleId: String,
+  // microsoftId: String,
 });
 
 userSchema.plugin(passportLocalMongoose);
