@@ -1,0 +1,71 @@
+[
+  {
+    "name": "ABC Money Exchange",
+    "addresses": [
+      "1311 Broadway, San Ysidro, CA 92173",
+      "510 E San Ysidro Blvd, San Ysidro, CA 92173",
+      "360 E San Ysidro Blvd, San Ysidro, CA 92173"
+    ]
+  },
+  {
+    "name": "Border X Change",
+    "addresses": [
+      "1213 Broadway, San Ysidro, CA 92173",
+      "551 East San Ysidro Blvd, San Ysidro, CA 92173"
+    ]
+  },
+  {
+    "name": "Casa de Cambio Tijuana",
+    "addresses": [
+      "1155 E Street, San Ysidro, CA 92173",
+      "117 W San Ysidro Blvd, San Ysidro, CA 92154"
+    ]
+  },
+  {
+    "name": "Currency Exchange International",
+    "addresses": ["1100 Broadway, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "Maniflo Money Exchange",
+    "addresses": ["1026 Broadway, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "MRK Casa De Cambio",
+    "addresses": ["952 Broadway, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "Money Mart",
+    "addresses": ["878 Broadway, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "Thomas Exchange International",
+    "addresses": ["789 Broadway, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "Travelex",
+    "addresses": [
+      "613 Broadway, San Ysidro, CA 92173",
+      "1313 Broadway, San Ysidro, CA 92173"
+    ]
+  },
+  {
+    "name": "Euronet Worldwide",
+    "addresses": ["1660 San Ysidro Blvd, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "Western Union",
+    "addresses": ["1010 Broadway, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "MoneyGram",
+    "addresses": ["1166 Broadway, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "Super Money Exchange",
+    "addresses": ["1170 E San Ysidro Blvd, San Ysidro, CA 92173"]
+  },
+  {
+    "name": "Casa de Cambio El Indio",
+    "addresses": ["1203 Broadway, San Ysidro, CA 92173"]
+  }
+]
