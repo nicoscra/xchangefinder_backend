@@ -1,0 +1,157 @@
+[
+  {
+    "name": "ABC Money Exchange",
+    "addresses": [
+      {
+        "address": "1311 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0776"
+      },
+      {
+        "address": "510 E San Ysidro Blvd, San Ysidro, CA 92173",
+        "phone": "(619) 690-0777"
+      },
+      {
+        "address": "360 E San Ysidro Blvd, San Ysidro, CA 92173",
+        "phone": "(619) 690-0778"
+      }
+    ]
+  },
+  {
+    "name": "Border X Change",
+    "addresses": [
+      {
+        "address": "1213 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0779"
+      },
+      {
+        "address": "551 East San Ysidro Blvd, San Ysidro, CA 92173",
+        "phone": "(619) 690-0780"
+      }
+    ]
+  },
+  {
+    "name": "Casa de Cambio Tijuana",
+    "addresses": [
+      {
+        "address": "1155 E Street, San Ysidro, CA 92173",
+        "phone": "(619) 690-0781"
+      },
+      {
+        "address": "117 W San Ysidro Blvd, San Ysidro, CA 92154",
+        "phone": "(619) 690-0782"
+      }
+    ]
+  },
+  {
+    "name": "Currency Exchange International",
+    "addresses": [
+      {
+        "address": "1100 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0783"
+      }
+    ]
+  },
+  {
+    "name": "Maniflo Money Exchange",
+    "addresses": [
+      {
+        "address": "1026 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0784"
+      }
+    ]
+  },
+  {
+    "name": "MRK Casa De Cambio",
+    "addresses": [
+      {
+        "address": "952 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0785"
+      }
+    ]
+  },
+  {
+    "name": "Money Mart",
+    "addresses": [
+      {
+        "address": "878 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0786"
+      }
+    ]
+  },
+  {
+    "name": "Thomas Exchange International",
+    "addresses": [
+      {
+        "address": "789 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0787"
+      }
+    ]
+  },
+  {
+    "name": "Travelex",
+    "addresses": [
+      {
+        "address": "613 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0788"
+      },
+      {
+        "address": "1313 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0789"
+      }
+    ]
+  },
+  {
+    "name": "Euronet Worldwide",
+    "addresses": [
+      {
+        "address": "1660 San Ysidro Blvd, San Ysidro, CA 92173",
+        "phone": "(619) 281-0100"
+      }
+    ]
+  },
+  {
+    "name": "Western Union",
+    "addresses": [
+      {
+        "address": "1010 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0791"
+      }
+    ]
+  },
+  {
+    "name": "MoneyGram",
+    "addresses": [
+      {
+        "address": "1166 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0792"
+      }
+    ]
+  },
+  {
+    "name": "Super Money Exchange",
+    "addresses": [
+      {
+        "address": "1170 E San Ysidro Blvd, San Ysidro, CA 92173",
+        "phone": "(619) 690-5035"
+      }
+    ]
+  },
+  {
+    "name": "Casa de Cambio El Indio",
+    "addresses": [
+      {
+        "address": "1203 Broadway, San Ysidro, CA 92173",
+        "phone": "(619) 690-0793"
+      }
+    ]
+  },
+  {
+    "name": "Casa De Cambio Kiosk",
+    "addresses": [
+      {
+        "address": "117 W San Ysidro Blvd, San Diego, CA 92154",
+        "phone": "(619) 428-0410"
+      }
+    ]
+  }
+]
